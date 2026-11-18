@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trajeto Ads | Pacientes certas para doutoras da harmonização</title>
+<meta name="description" content="Tráfego, criativos e equipe preparada para agendar. A Trajeto Ads traz a paciente certa e prepara a sua clínica para transformar mensagem em agendamento.">
+<meta property="og:title" content="Trajeto Ads | Análise Estratégica Gratuita">
+<meta property="og:description" content="Paciente certa chegando todo mês e a sua equipe preparada para agendar.">
+<meta property="og:image" content="logo.png">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script>
+  /* ===== CONFIGURAÇÃO: troque só aqui ===== */
+  window.TRAJETO = {
+    whatsapp: "5581989339561",   // seu WhatsApp com DDI e DDD, só números
+    pixelId: ""                  // ID do Pixel da Meta (deixe vazio se ainda não tiver)
+  };
+  /* ======================================== */
+  if (window.TRAJETO.pixelId) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', window.TRAJETO.pixelId); fbq('track', 'PageView');
+  }
+</script>
+
+<style>
+  :root{
+    --navy:#0C2340; --navy-2:#13304F; --steel:#24597F; --sky:#8EC3E6;
+    --ice:#F4F5F6; --line:#E3E7EC; --ink:#0C2340; --muted:#5B6B7E; --white:#fff;
+    --r:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+  h1,h2,h3{line-height:1.15;letter-spacing:-.02em}
+  .eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--steel)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:15px;border-radius:999px;padding:14px 26px;border:0;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-navy{background:var(--navy);color:#fff;box-shadow:0 8px 24px rgba(12,35,64,.25)}
+  .btn-navy:hover{background:var(--steel)}
+  .btn-white{background:#fff;color:var(--navy)}
+
+  /* NAV */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .nav img{height:30px;width:auto}
+  .nav ul{display:flex;gap:32px;list-style:none;font-size:15px;font-weight:600;color:var(--muted)}
+  .nav ul a:hover{color:var(--navy)}
+  .nav .btn{padding:11px 20px;font-size:14px}
+
+  /* HERO */
+  .hero{background:radial-gradient(1200px 600px at 85% -10%,#1E4A72 0%,transparent 60%),linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff;padding:72px 0 88px;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+  .hero .eyebrow{color:var(--sky)}
+  .hero h1{font-size:clamp(34px,4.6vw,54px);font-weight:800;margin:16px 0 20px}
+  .hero h1 em{font-style:normal;color:var(--sky)}
+  .hero p.lead{font-size:18px;color:rgba(255,255,255,.82);max-width:540px}
+  .hero-points{list-style:none;margin:28px 0 0;display:grid;gap:12px}
+  .hero-points li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:rgba(255,255,255,.9)}
+  .check{flex:none;width:22px;height:22px;border-radius:50%;background:rgba(142,195,230,.18);display:grid;place-items:center;margin-top:2px}
+  .check svg{width:12px;height:12px}
+
+  /* FORM */
+  .card{background:#fff;color:var(--ink);border-radius:22px;padding:32px;box-shadow:0 30px 60px rgba(0,0,0,.28)}
+  .card h3{font-size:22px;font-weight:800}
+  .card .sub{color:var(--muted);font-size:14.5px;margin:6px 0 22px}
+  .field{margin-bottom:14px}
+  .field label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}
+  .field input,.field select{width:100%;font:inherit;font-size:15px;padding:13px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--ice);color:var(--ink);outline:none;transition:border .15s,background .15s}
+  .field input:focus,.field select:focus{border-color:var(--steel);background:#fff}
+  .field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1.5l5 5 5-5' stroke='%230C2340' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+  .card .btn{width:100%;margin-top:6px;padding:16px}
+  .fine{font-size:12px;color:var(--muted);text-align:center;margin-top:12px}
+  .err{color:#B42318;font-size:13px;margin-top:8px;display:none}
+  .thanks{display:none;text-align:center;padding:20px 0}
+  .thanks .ok{width:56px;height:56px;border-radius:50%;background:#E6F2EA;display:grid;place-items:center;margin:0 auto 16px}
+  .thanks h3{margin-bottom:8px}
+  .thanks p{color:var(--muted);font-size:15px;margin-bottom:20px}
+
+  /* TICKER */
+  .ticker{background:var(--ice);border-bottom:1px solid var(--line);overflow:hidden;padding:18px 0}
+  .ticker-track{display:flex;gap:48px;width:max-content;animation:scroll 32s linear infinite}
+  .ticker span{font-weight:700;font-size:15px;color:var(--navy);white-space:nowrap;display:flex;align-items:center;gap:48px}
+  .ticker span::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--steel)}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+
+  section{padding:96px 0}
+  .head{max-width:720px;margin-bottom:48px}
+  .head h2{font-size:clamp(28px,3.4vw,40px);font-weight:800;margin-top:12px}
+  .head p{color:var(--muted);font-size:17px;margin-top:14px}
+  .center{text-align:center;margin-left:auto;margin-right:auto}
+
+  .pains{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .pain{border:1px solid var(--line);border-radius:var(--r);padding:28px;background:#fff}
+  .pain .n{font-size:13px;font-weight:800;color:var(--steel);letter-spacing:.06em}
+  .pain h3{font-size:19px;margin:10px 0 8px}
+  .pain p{color:var(--muted);font-size:15px}
+
+  /* MÉTODO */
+  .method{background:var(--ice)}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .step{background:#fff;border-radius:var(--r);padding:28px;border:1px solid var(--line);position:relative}
+  .step .num{font-size:40px;font-weight:800;color:var(--line);line-height:1}
+  .step h3{font-size:18px;margin:14px 0 8px}
+  .step p{color:var(--muted);font-size:14.5px}
+  .step .tag{display:inline-block;margin-top:14px;font-size:12px;font-weight:700;color:var(--steel);background:#EAF2F8;border-radius:999px;padding:4px 10px}
+  .split{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .split div{border-radius:var(--r);padding:24px 28px}
+  .split .us{background:var(--navy);color:#fff}
+  .split .you{background:#fff;border:1px solid var(--line)}
+  .split h4{font-size:15px;margin-bottom:6px}
+  .split p{font-size:14.5px;opacity:.85}
+
+  /* FAQ */
+  .faq{max-width:820px;margin:0 auto}
+  details{border-bottom:1px solid var(--line);padding:22px 0}
+  summary{list-style:none;cursor:pointer;font-weight:700;font-size:17px;display:flex;justify-content:space-between;gap:16px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:24px;font-weight:400;color:var(--steel);line-height:1}
+  details[open] summary::after{content:"–"}
+  details p{color:var(--muted);margin-top:12px;font-size:15.5px}
+
+  /* CTA */
+  .cta{background:linear-gradient(160deg,var(--navy),var(--navy-2));color:#fff;border-radius:28px;padding:64px 48px;text-align:center}
+  .cta h2{font-size:clamp(28px,3.4vw,40px);font-weight:800;max-width:720px;margin:0 auto 14px}
+  .cta p{color:rgba(255,255,255,.8);max-width:560px;margin:0 auto 28px;font-size:17px}
+
+  footer{padding:40px 0;border-top:1px solid var(--line)}
+  .foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+  .foot img{height:24px}
+  .foot a:hover{color:var(--navy)}
+
+  .wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.2)}
+  .wa-float svg{width:28px;height:28px}
+
+  @media (max-width:960px){
+    .hero-grid,.split{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr 1fr}
+    .pains{grid-template-columns:1fr}
+    .nav ul{display:none}
+  }
+  @media (max-width:560px){
+    .steps{grid-template-columns:1fr}
+    section{padding:72px 0}
+    .hero{padding:48px 0 64px}
+    .card{padding:24px}
+    .cta{padding:48px 24px}
+    .nav img{height:26px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#topo"><img src="logo.png" alt="Trajeto Ads"></a>
+    <ul>
+      <li><a href="#resultados">Resultados</a></li>
+      <li><a href="#como-funciona">O sistema</a></li>
+      <li><a href="#perguntas">Perguntas</a></li>
+    </ul>
+    <a href="#analise" class="btn btn-navy">Falar com a Trajeto</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="topo">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Para donos de clínica e doutoras da harmonização</span>
+      <h1>Mais pacientes e mais procedimentos vendidos, com um <em>sistema completo</em> de aquisição e vendas para a sua clínica.</h1>
+      <p class="lead">Implantamos o método inteiro dentro da sua clínica em até 90 dias: anúncios, qualificação, CRM, roteiro e acompanhamento. A sua equipe só precisa atender.</p>
+      <ul class="hero-points">
+        <li><span class="check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5l2.5 2.5L10 3" stroke="#8EC3E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Campanhas no Meta e no Google para os procedimentos que você quer vender</li>
+        <li><span class="check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5l2.5 2.5L10 3" stroke="#8EC3E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Leads qualificados, CRM, scripts e automações de follow-up</li>
+        <li><span class="check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5l2.5 2.5L10 3" stroke="#8EC3E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Métricas acompanhadas e processo comercial auditado todo mês</li>
+      </ul>
+    </div>
+
+    <div class="card" id="analise">
+      <form id="leadForm" novalidate>
+        <h3>Fale com um especialista</h3>
+        <p class="sub">Responda em 1 minuto e receba uma Análise Estratégica gratuita da sua clínica.</p>
+        <div class="field">
+          <label for="fat">Quanto sua clínica fatura por mês?</label>
+          <select id="fat" name="fat" required>
+            <option value="" disabled selected>Selecione</option>
+            <option>Até R$ 20 mil</option>
+            <option>R$ 20 a 50 mil</option>
+            <option>R$ 50 a 100 mil</option>
+            <option>Acima de R$ 100 mil</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="nome">Seu nome</label>
+          <input id="nome" name="nome" type="text" placeholder="Dra. Ana Souza" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="whats">WhatsApp</label>
+          <input id="whats" name="whats" type="tel" placeholder="(81) 9 9999-9999" autocomplete="tel" inputmode="numeric" required>
+        </div>
+        <div class="field">
+          <label for="clinica">Nome da clínica</label>
+          <input id="clinica" name="clinica" type="text" placeholder="Clínica Ana Souza" autocomplete="organization" required>
+        </div>
+        <button class="btn btn-navy" type="submit">Quero mais informações</button>
+        <p class="err" id="err">Preencha todos os campos para continuar.</p>
+        <p class="fine">Seus dados ficam só com a Trajeto Ads.</p>
+      </form>
+
+      <div class="thanks" id="thanks">
+        <div class="ok"><svg width="26" height="26" viewBox="0 0 12 12" fill="none"><path d="M2 6.5l2.5 2.5L10 3" stroke="#1E7B45" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Recebemos seus dados!</h3>
+        <p>Um especialista da Trajeto vai falar com você em breve. Para agilizar, envie a mensagem que abriu no seu WhatsApp. Se não abriu, toque no botão abaixo.</p>
+        <a class="btn btn-navy" id="waBtn" href="#" target="_blank" rel="noopener">Falar no WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Aquisição</span><span>Qualificação</span><span>Conversão comercial</span><span>Implantação em 90 dias</span><span>Mais pacientes</span><span>CRM e automações</span>
+    <span>Aquisição</span><span>Qualificação</span><span>Conversão comercial</span><span>Implantação em 90 dias</span><span>Mais pacientes</span><span>CRM e automações</span>
+  </div>
+</div>
+
+<!-- PROVA -->
+<section id="resultados">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Resultados</span>
+      <h2>Quem trabalha com a Trajeto vê a clínica crescer.</h2>
+      <p>Clínicas reais, com mais oportunidades chegando, mais pacientes agendadas e um processo comercial que não depende da sorte.</p>
+    </div>
+    <div class="pains">
+      <div class="pain">
+        <span class="n">MAIS OPORTUNIDADES</span>
+        <h3>Contatos novos toda semana</h3>
+        <p>Campanhas rodando para os procedimentos certos, trazendo pacientes que ainda não conheciam a clínica.</p>
+      </div>
+      <div class="pain">
+        <span class="n">MAIS AGENDAMENTOS</span>
+        <h3>Menos "quanto custa?" que some</h3>
+        <p>Leads qualificados e uma equipe com roteiro e follow-up, que transforma conversa em consulta marcada.</p>
+      </div>
+      <div class="pain">
+        <span class="n">PROCESSO ESTRUTURADO</span>
+        <h3>Números claros todo mês</h3>
+        <p>Você sabe quanto entrou, quanto agendou e quanto custou cada paciente, e onde dá para melhorar.</p>
+      </div>
+    </div>
+    <!-- DEPOIMENTOS / LOGOS DE CLIENTES: inserir aqui quando tiver os prints e autorizações -->
+  </div>
+</section>
+
+<!-- MÉTODO -->
+<section class="method" id="como-funciona">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">O sistema</span>
+      <h2>A gente não entrega só leads.</h2>
+      <p>Geramos a demanda, qualificamos cada contato e estruturamos o comercial da sua clínica para que nenhuma oportunidade se perca no caminho.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">01</div>
+        <h3>Diagnóstico estratégico</h3>
+        <p>Analisamos perfil, procedimentos, funil e atendimento para encontrar os gargalos de aquisição e de conversão.</p>
+        <span class="tag">Mapa de gargalos</span>
+      </div>
+      <div class="step">
+        <div class="num">02</div>
+        <h3>Geração de demanda</h3>
+        <p>Campanhas no Meta e no Google Ads com criativos para cada procedimento, atraindo pacientes com real interesse.</p>
+        <span class="tag">Meta + Google Ads</span>
+      </div>
+      <div class="step">
+        <div class="num">03</div>
+        <h3>Qualificação e estrutura comercial</h3>
+        <p>Filtramos os contatos e implantamos CRM, scripts de atendimento, automações de WhatsApp e rotina de follow-up, com treinamento da equipe.</p>
+        <span class="tag">CRM + scripts + automações</span>
+      </div>
+      <div class="step">
+        <div class="num">04</div>
+        <h3>Acompanhamento e otimização</h3>
+        <p>Monitoramos as métricas, auditamos o atendimento e ajustamos campanhas e processo continuamente, com relatório mensal.</p>
+        <span class="tag">Relatório + auditoria</span>
+      </div>
+    </div>
+    <div class="split">
+      <div class="us">
+        <h4>O que a Trajeto faz</h4>
+        <p>Campanhas, criativos, qualificação, CRM, scripts, automações, treinamento, auditoria e relatórios.</p>
+      </div>
+      <div class="you">
+        <h4>O que a sua clínica faz</h4>
+        <p>Atende e agenda. Você não precisa de time de marketing, só de alguém para responder os pacientes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="perguntas">
+  <div class="wrap">
+    <div class="head center">
+      <span class="eyebrow">Perguntas frequentes</span>
+      <h2>Antes de falar com a gente</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Qual a diferença entre a Trajeto e uma agência de tráfego?</summary>
+        <p>A agência de tráfego entrega contatos e para por aí. A Trajeto é especializada em clínicas e vai além: qualifica os leads e estrutura o comercial, com CRM, scripts, automações e treinamento, para que esses contatos virem pacientes.</p>
+      </details>
+      <details>
+        <summary>Como vocês geram os leads?</summary>
+        <p>Com campanhas no Meta (Instagram e Facebook) e no Google Ads, focadas nos procedimentos que você quer vender. Depois, os contatos passam por qualificação e as melhores oportunidades chegam para a sua equipe.</p>
+      </details>
+      <details>
+        <summary>Em quanto tempo vejo resultado?</summary>
+        <p>A implantação completa e as otimizações acontecem ao longo de 90 dias. Os primeiros contatos costumam chegar bem antes, nas primeiras semanas de campanha, dependendo da clínica e do investimento em anúncios.</p>
+      </details>
+      <details>
+        <summary>Preciso ter uma equipe de marketing?</summary>
+        <p>Não. Você só precisa de alguém para atender e agendar os pacientes. A gente entrega o treinamento, os scripts e o suporte comercial para essa pessoa.</p>
+      </details>
+      <details>
+        <summary>Vocês garantem resultado?</summary>
+        <p>Não prometemos um número fixo de pacientes ou de faturamento, porque isso depende de fatores que não controlamos. O que garantimos é executar a metodologia contratada e melhorar continuamente a sua conversão, com números na mesa todo mês.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h2>Vamos fazer sua clínica vender mais procedimentos todo mês?</h2>
+      <p>Solicite seu diagnóstico estratégico gratuito. A gente analisa o cenário da sua clínica e te mostra o plano, sem compromisso.</p>
+      <a href="#analise" class="btn btn-white">Solicitar diagnóstico estratégico</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <img src="logo.png" alt="Trajeto Ads">
+    <span>Marketing e estrutura comercial para clínicas</span>
+    <a href="https://instagram.com/trafego.almeida" target="_blank" rel="noopener">@trafego.almeida</a>
+    <span>© 2026 Trajeto Ads</span>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.700-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2C2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.2 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.2-6.200-3.6-8.4z"/></svg>
+</a>
+
+<script>
+(function(){
+  var cfg = window.TRAJETO;
+  var base = "https://wa.me/" + cfg.whatsapp;
+  document.getElementById("waFloat").href = base + "?text=" + encodeURIComponent("Oi! Vim pelo site e quero saber mais sobre a Análise Estratégica.");
+
+  var w = document.getElementById("whats");
+  w.addEventListener("input", function(){
+    var d = w.value.replace(/\D/g,"").slice(0,11), o = d;
+    if (d.length > 2) o = "(" + d.slice(0,2) + ") " + d.slice(2);
+    if (d.length > 7) o = "(" + d.slice(0,2) + ") " + d.slice(2,7) + "-" + d.slice(7);
+    w.value = o;
+  });
+
+  document.getElementById("leadForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var f = e.target, nome = f.nome.value.trim(), tel = f.whats.value.replace(/\D/g,""),
+        clinica = f.clinica.value.trim(), fat = f.fat.value, err = document.getElementById("err");
+    if (!nome || tel.length < 10 || !clinica || !fat) { err.style.display = "block"; return; }
+    err.style.display = "none";
+
+    var msg = "Oi! Acabei de preencher a Análise Estratégica no site.\n\n" +
+              "Nome: " + nome + "\nWhatsApp: " + f.whats.value + "\nClínica: " + clinica + "\nFaturamento: " + fat;
+    var link = base + "?text=" + encodeURIComponent(msg);
+
+    if (window.fbq) fbq("track", "Lead", { content_name: "Analise Estrategica", value: 0, currency: "BRL" });
+
+    document.getElementById("waBtn").href = link;
+    f.style.display = "none";
+    document.getElementById("thanks").style.display = "block";
+    document.getElementById("analise").scrollIntoView({ behavior: "smooth", block: "center" });
+    setTimeout(function(){ window.location.href = link; }, 900);
+  });
+})();
+</script>
+</body>
+</html>
