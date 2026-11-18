@@ -17,7 +17,8 @@
   /* ===== CONFIGURAÇÃO ===== */
   window.TRAJETO = {
     whatsapp: "5581989339561",
-    pixelId: ""
+    pixelId: "",
+    planilha: "https://script.google.com/macros/s/AKfycbxIyeJUnOUzmKcy3gZUB12Aux2HnLPCFZ3Noua9d6IbPGAOcMaLet-gxHUdz9HLB8dV/exec"   // endereço do script que salva os leads na planilha
   };
   /* ======================== */
   if (window.TRAJETO.pixelId) {
@@ -358,12 +359,20 @@
     var msg = "Oi! Acabei de preencher a Análise Estratégica no site.\n\n" +
               "Nome: " + nome + "\nWhatsApp: " + f.whats.value + "\nClínica: " + clinica + "\nFaturamento: " + fat;
     var link = base + "?text=" + encodeURIComponent(msg);
+    try {
+      var q = new URLSearchParams(location.search);
+      var origem = [q.get("utm_source"), q.get("utm_campaign"), q.get("utm_content")].filter(Boolean).join(" / ") || document.referrer || "direto";
+      if (window.TRAJETO.planilha && window.TRAJETO.planilha.indexOf("http") === 0) {
+        fetch(window.TRAJETO.planilha, { method: "POST", mode: "no-cors", keepalive: true,
+          body: new URLSearchParams({ nome: nome, whatsapp: f.whats.value, clinica: clinica, faturamento: fat, origem: origem }) });
+      }
+    } catch (x) {}
     if (window.fbq) fbq("track", "Lead", { content_name: "Analise Estrategica", currency: "BRL", value: 0 });
     document.getElementById("waBtn").href = link;
     f.style.display = "none";
     document.getElementById("thanks").style.display = "block";
     document.getElementById("analise").scrollIntoView({ behavior: "smooth", block: "center" });
-    setTimeout(function(){ window.location.href = link; }, 900);
+    setTimeout(function(){ window.location.href = link; }, 1200);
   });
 })();
 </script>
