@@ -171,6 +171,13 @@
   .wa-tag::before{content:"";width:7px;height:7px;border-radius:50%;background:#25D366}
   @media (max-width:980px){.stats{grid-template-columns:1fr 1fr}.quotes{columns:2}}
   @media (max-width:600px){.quotes{columns:1}.stat b{font-size:24px}.stat{padding:20px 14px}}
+  .prints{columns:3;column-gap:16px}
+  .shot{break-inside:avoid;margin:0 0 16px;border-radius:20px;overflow:hidden;background:#0B141A;border:1px solid var(--line);box-shadow:0 14px 40px rgba(30,50,90,.10);transition:transform .3s}
+  .shot:hover{transform:translateY(-4px)}
+  .shot img{display:block;width:100%;height:auto}
+  .prints-note{text-align:center;color:var(--muted);font-size:14px;margin-top:8px}
+  @media (max-width:980px){.prints{columns:2}}
+  @media (max-width:600px){.prints{columns:1}}
   .wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:54px;height:54px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.15)}
   .wa-float svg{width:26px;height:26px}
 
@@ -281,7 +288,7 @@
     <div class="reveal head">
       <span class="eyebrow">Resultados</span>
       <h2>Quem trabalha com a Trajeto vê a clínica crescer</h2>
-      <p>Resultados enviados pelos nossos clientes no grupo e no WhatsApp.</p>
+      <p>Feedbacks reais dos nossos clientes, do jeito que chegaram para a gente.</p>
     </div>
     <div class="stats reveal">
       <div class="stat"><b>R$ 212 mil</b><span>faturados no mês · Clínica Plus</span></div>
@@ -289,18 +296,19 @@
       <div class="stat"><b>R$ 97 mil</b><span>em protocolos faciais · Clínica Pele</span></div>
       <div class="stat"><b>16 full face</b><span>fechados no mês · Dra. Priscila</span></div>
     </div>
-    <div class="quotes reveal">
-      <div class="quote"><div class="who"><span class="av">WD</span><div><strong>Dr. William Dutra</strong><small>Harmonização facial</small></div></div><p>Fechamos o mês com <mark>R$ 128.400,00 de faturamento</mark>, sendo 36 harmonizações e 19 protocolos faciais. Melhor mês do ano! 🚀</p><span class="wa-tag">Mensagem real de cliente</span></div>
-      <div class="quote"><div class="who"><span class="av">T</span><div><strong>Dra. Tatianny</strong><small>Harmonização facial</small></div></div><p>Conseguimos <mark>27 preenchimentos labiais, 14 rinomodelações e 11 bioestimuladores</mark>. A agenda tá lotada até semana que vem! 🙌</p><span class="wa-tag">Mensagem real de cliente</span></div>
-      <div class="quote"><div class="who"><span class="av">CP</span><div><strong>Clínica Plus</strong><small>Clínica de estética</small></div></div><p>Batemos <mark>R$ 212.000,00 em faturamento</mark> esse mês, com 58 protocolos estéticos e 22 harmonizações faciais. 🚀</p><span class="wa-tag">Mensagem real de cliente</span></div>
-      <div class="quote"><div class="who"><span class="av">PM</span><div><strong>Dra. Priscila Mendonça</strong><small>Harmonização facial</small></div></div><p>Fechamos <mark>16 full face</mark> este mês! O volume de leads qualificados aumentou muito depois dos ajustes que vocês fizeram nas campanhas. Gratidão! 🤍</p><span class="wa-tag">Mensagem real de cliente</span></div>
-      <div class="quote"><div class="who"><span class="av">VN</span><div><strong>Dr. Victor Nogueira</strong><small>Harmonização e cirurgia</small></div></div><p>Fechamos <mark>11 bichectomias, 9 lipo de papada e 13 harmonizações</mark>. Agenda de avaliações segue cheia! Excelente trabalho, time! 👏</p><span class="wa-tag">Mensagem real de cliente</span></div>
-      <div class="quote"><div class="who"><span class="av">PE</span><div><strong>Clínica Pele</strong><small>Estética facial</small></div></div><p>Resultado do mês fechado: <mark>R$ 97.600,00 em faturamento</mark>, com 41 protocolos faciais (skinbooster, microagulhamento e bioestimulador). Seguimos crescendo! 💜</p><span class="wa-tag">Mensagem real de cliente</span></div>
-      <div class="quote"><div class="who"><span class="av">D</span><div><strong>Doutora da harmonização</strong><small>Cliente Trajeto</small></div></div><p>Já fechamos <mark>8 procedimentos</mark>, sendo 3 preenchimentos e 5 aplicações de toxina. O volume de pacientes qualificados melhorou bastante, e o perfil da campanha está muito bom. 👏</p><span class="wa-tag">Mensagem real de cliente</span></div>
-      <div class="quote"><div class="who"><span class="av">D</span><div><strong>Doutora da harmonização</strong><small>Cliente Trajeto</small></div></div><p><mark>Fechamos 9 avaliações essa semana</mark>, sendo 4 para preenchimento labial e 3 para toxina. A qualidade dos leads melhorou bastante e o atendimento também está mais organizado com o CRM.</p><span class="wa-tag">Mensagem real de cliente</span></div>
-      <div class="quote"><div class="who"><span class="av">JN</span><div><strong>Dra. Juliana Nunes</strong><small>Harmonização facial</small></div></div><p>A agenda está cheia, com <mark>lista de espera para a próxima semana</mark>. É visível a evolução do posicionamento da clínica! 👏</p><span class="wa-tag">Mensagem real de cliente</span></div>
-      <div class="quote"><div class="who"><span class="av">CP</span><div><strong>Clínica Plus</strong><small>Atualização de outro mês</small></div></div><p>Fechamos o mês com <mark>R$ 136.800,00 em faturamento</mark> e 49 atendimentos, sendo 19 preenchimentos, 12 toxinas e 6 protocolos faciais. A campanha está performando muito bem! 🚀</p><span class="wa-tag">Mensagem real de cliente</span></div>
+    <div class="prints reveal">
+      <figure class="shot"><img src="prints/p7.webp" alt="Print de depoimento: Doutora da harmonização" width="380" height="395" loading="lazy"></figure>
+      <figure class="shot"><img src="prints/p1.webp" alt="Print de depoimento: Dr. William Dutra" width="440" height="180" loading="lazy"></figure>
+      <figure class="shot"><img src="prints/p3.webp" alt="Print de depoimento: Clínica Plus" width="440" height="163" loading="lazy"></figure>
+      <figure class="shot"><img src="prints/p8.webp" alt="Print de depoimento: Doutora da harmonização" width="380" height="254" loading="lazy"></figure>
+      <figure class="shot"><img src="prints/p4.webp" alt="Print de depoimento: Dra. Priscila Mendonça" width="440" height="148" loading="lazy"></figure>
+      <figure class="shot"><img src="prints/p2.webp" alt="Print de depoimento: Dra. Tatianny" width="440" height="169" loading="lazy"></figure>
+      <figure class="shot"><img src="prints/p10.webp" alt="Print de depoimento: Dra. Juliana Nunes" width="440" height="128" loading="lazy"></figure>
+      <figure class="shot"><img src="prints/p5.webp" alt="Print de depoimento: Dr. Victor Nogueira" width="440" height="132" loading="lazy"></figure>
+      <figure class="shot"><img src="prints/p6.webp" alt="Print de depoimento: Clínica Pele" width="440" height="118" loading="lazy"></figure>
+      <figure class="shot"><img src="prints/p9.webp" alt="Print de depoimento: Clínica Plus" width="440" height="176" loading="lazy"></figure>
     </div>
+    <p class="prints-note">Prints reais enviados pelos clientes no WhatsApp e no grupo de acompanhamento.</p>
   </div>
 </section>
 
