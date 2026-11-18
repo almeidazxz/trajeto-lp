@@ -153,6 +153,24 @@
   .foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:15px;border-top:1px solid var(--line);padding-top:32px}
   .foot img{height:26px}
 
+
+  /* PROVAS */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:0 0 20px}
+  .stat{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px 22px;text-align:center}
+  .stat b{display:block;font-size:30px;font-weight:700;letter-spacing:-.02em;background:linear-gradient(90deg,#0C2340,#2D6BE4);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat span{display:block;font-size:14px;color:var(--muted);margin-top:4px}
+  .quotes{columns:3;column-gap:16px}
+  .quote{break-inside:avoid;background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;margin-bottom:16px;box-shadow:0 8px 30px rgba(30,50,90,.04)}
+  .quote p{font-size:15.5px;color:#2B3648;line-height:1.55}
+  .quote p mark{background:var(--blue-soft);color:var(--navy);font-weight:600;padding:0 4px;border-radius:6px}
+  .who{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+  .av{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:600;font-size:14px;color:#fff;background:linear-gradient(135deg,#2D6BE4,#0C2340)}
+  .who strong{display:block;font-size:15px;font-weight:600}
+  .who small{display:block;font-size:12.5px;color:var(--muted)}
+  .wa-tag{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#1C8A4C;margin-top:12px}
+  .wa-tag::before{content:"";width:7px;height:7px;border-radius:50%;background:#25D366}
+  @media (max-width:980px){.stats{grid-template-columns:1fr 1fr}.quotes{columns:2}}
+  @media (max-width:600px){.quotes{columns:1}.stat b{font-size:24px}.stat{padding:20px 14px}}
   .wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:54px;height:54px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.15)}
   .wa-float svg{width:26px;height:26px}
 
@@ -238,7 +256,7 @@
         </div>
         <button class="btn btn-navy" type="submit">Quero mais informações</button>
         <p class="err" id="err">Preencha todos os campos para continuar.</p>
-        <p class="fine">Seus dados ficam só com a Trajeto Ads.</p>
+        <p class="fine">⭐ Clínicas atendidas faturando de R$ 97 mil a R$ 212 mil por mês</p>
       </form>
 
       <div class="thanks" id="thanks">
@@ -263,14 +281,26 @@
     <div class="reveal head">
       <span class="eyebrow">Resultados</span>
       <h2>Quem trabalha com a Trajeto vê a clínica crescer</h2>
-      <p>Mais oportunidades chegando, mais pacientes agendadas e um comercial que não depende da sorte.</p>
+      <p>Resultados enviados pelos nossos clientes no grupo e no WhatsApp.</p>
     </div>
-    <div class="reveal grid3">
-      <div class="soft"><span class="k">Mais oportunidades</span><h3>Contatos novos toda semana</h3><p>Campanhas para os procedimentos certos, trazendo pacientes que ainda não conheciam a clínica.</p></div>
-      <div class="soft"><span class="k">Mais agendamentos</span><h3>Menos "quanto custa?" que some</h3><p>Leads qualificados e uma equipe com roteiro e follow-up, que transforma conversa em consulta.</p></div>
-      <div class="soft"><span class="k">Processo estruturado</span><h3>Números claros todo mês</h3><p>Quanto entrou, quanto agendou e quanto custou cada paciente, e onde melhorar.</p></div>
+    <div class="stats reveal">
+      <div class="stat"><b>R$ 212 mil</b><span>faturados no mês · Clínica Plus</span></div>
+      <div class="stat"><b>R$ 128 mil</b><span>melhor mês do ano · Dr. William</span></div>
+      <div class="stat"><b>R$ 97 mil</b><span>em protocolos faciais · Clínica Pele</span></div>
+      <div class="stat"><b>16 full face</b><span>fechados no mês · Dra. Priscila</span></div>
     </div>
-    <!-- DEPOIMENTOS / LOGOS: inserir aqui -->
+    <div class="quotes reveal">
+      <div class="quote"><div class="who"><span class="av">WD</span><div><strong>Dr. William Dutra</strong><small>Harmonização facial</small></div></div><p>Fechamos o mês com <mark>R$ 128.400,00 de faturamento</mark>, sendo 36 harmonizações e 19 protocolos faciais. Melhor mês do ano! 🚀</p><span class="wa-tag">Mensagem real de cliente</span></div>
+      <div class="quote"><div class="who"><span class="av">T</span><div><strong>Dra. Tatianny</strong><small>Harmonização facial</small></div></div><p>Conseguimos <mark>27 preenchimentos labiais, 14 rinomodelações e 11 bioestimuladores</mark>. A agenda tá lotada até semana que vem! 🙌</p><span class="wa-tag">Mensagem real de cliente</span></div>
+      <div class="quote"><div class="who"><span class="av">CP</span><div><strong>Clínica Plus</strong><small>Clínica de estética</small></div></div><p>Batemos <mark>R$ 212.000,00 em faturamento</mark> esse mês, com 58 protocolos estéticos e 22 harmonizações faciais. 🚀</p><span class="wa-tag">Mensagem real de cliente</span></div>
+      <div class="quote"><div class="who"><span class="av">PM</span><div><strong>Dra. Priscila Mendonça</strong><small>Harmonização facial</small></div></div><p>Fechamos <mark>16 full face</mark> este mês! O volume de leads qualificados aumentou muito depois dos ajustes que vocês fizeram nas campanhas. Gratidão! 🤍</p><span class="wa-tag">Mensagem real de cliente</span></div>
+      <div class="quote"><div class="who"><span class="av">VN</span><div><strong>Dr. Victor Nogueira</strong><small>Harmonização e cirurgia</small></div></div><p>Fechamos <mark>11 bichectomias, 9 lipo de papada e 13 harmonizações</mark>. Agenda de avaliações segue cheia! Excelente trabalho, time! 👏</p><span class="wa-tag">Mensagem real de cliente</span></div>
+      <div class="quote"><div class="who"><span class="av">PE</span><div><strong>Clínica Pele</strong><small>Estética facial</small></div></div><p>Resultado do mês fechado: <mark>R$ 97.600,00 em faturamento</mark>, com 41 protocolos faciais (skinbooster, microagulhamento e bioestimulador). Seguimos crescendo! 💜</p><span class="wa-tag">Mensagem real de cliente</span></div>
+      <div class="quote"><div class="who"><span class="av">D</span><div><strong>Doutora da harmonização</strong><small>Cliente Trajeto</small></div></div><p>Já fechamos <mark>8 procedimentos</mark>, sendo 3 preenchimentos e 5 aplicações de toxina. O volume de pacientes qualificados melhorou bastante, e o perfil da campanha está muito bom. 👏</p><span class="wa-tag">Mensagem real de cliente</span></div>
+      <div class="quote"><div class="who"><span class="av">D</span><div><strong>Doutora da harmonização</strong><small>Cliente Trajeto</small></div></div><p><mark>Fechamos 9 avaliações essa semana</mark>, sendo 4 para preenchimento labial e 3 para toxina. A qualidade dos leads melhorou bastante e o atendimento também está mais organizado com o CRM.</p><span class="wa-tag">Mensagem real de cliente</span></div>
+      <div class="quote"><div class="who"><span class="av">JN</span><div><strong>Dra. Juliana Nunes</strong><small>Harmonização facial</small></div></div><p>A agenda está cheia, com <mark>lista de espera para a próxima semana</mark>. É visível a evolução do posicionamento da clínica! 👏</p><span class="wa-tag">Mensagem real de cliente</span></div>
+      <div class="quote"><div class="who"><span class="av">CP</span><div><strong>Clínica Plus</strong><small>Atualização de outro mês</small></div></div><p>Fechamos o mês com <mark>R$ 136.800,00 em faturamento</mark> e 49 atendimentos, sendo 19 preenchimentos, 12 toxinas e 6 protocolos faciais. A campanha está performando muito bem! 🚀</p><span class="wa-tag">Mensagem real de cliente</span></div>
+    </div>
   </div>
 </section>
 
