@@ -79,8 +79,9 @@
   .hero{padding:72px 0 96px}
   .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:72px;align-items:center}
   .hero-text{text-align:center}
-  .hero h1{font-size:clamp(32px,4.6vw,62px);font-weight:800;line-height:1.04;letter-spacing:-.01em;text-transform:uppercase}
-  .hero h1 em{display:block;white-space:nowrap;font-size:min(1.3em,10vw,76px);line-height:1.02;margin:.06em 0;font-style:normal;background:linear-gradient(90deg,#2D6BE4,#5B8CFF,#2D6BE4);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:grad 6s linear infinite}
+  .hero h1{font-size:clamp(24px,6.4vw,58px);font-weight:800;line-height:1.04;letter-spacing:-.01em;text-transform:uppercase}
+  .hero h1 span{display:block;white-space:nowrap}
+  .hero h1 em{font-style:normal;background:linear-gradient(90deg,#2D6BE4,#5B8CFF,#2D6BE4);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:grad 6s linear infinite}
   @keyframes grad{to{background-position:200% center}}
   .hero .bar{width:48px;height:3px;border-radius:3px;background:var(--blue);margin:32px auto}
   .hero-text p{font-size:20px;color:#3A4558;max-width:520px;margin:0 auto}
@@ -192,7 +193,7 @@
     .nav img{height:26px}
     .nav .btn{padding:11px 18px;font-size:14px}
     .hero{padding:44px 0 56px}
-    .hero h1{font-size:31px}
+    .hero h1{font-size:min(31px,7.1vw)}
     .hero .bar{margin:22px auto}
     .hero-text p{font-size:17px}
     .card{padding:36px 20px 28px;border-radius:26px}
@@ -268,7 +269,7 @@
 <section class="hero" id="topo">
   <div class="wrap hero-grid">
     <div class="reveal hero-text">
-      <h1>Dono de clínica, tenha <em>mais pacientes</em> e mais procedimentos vendidos com o nosso método</h1>
+      <h1><span>Dono de clínica,</span> <span>tenha <em>mais pacientes</em></span> <span>e mais procedimentos</span> <span>vendidos com o</span> <span>nosso método</span></h1>
       <div class="bar"></div>
       <p><b>Em até 90 dias</b>, implantamos o sistema completo dentro da sua clínica. Você só atende os pacientes.</p>
     </div>
