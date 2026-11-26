@@ -473,6 +473,20 @@
   @media (max-width:980px){.rgrid{grid-template-columns:1fr 1fr}}
   @media (max-width:600px){.rgrid{grid-template-columns:1fr}}
   .rnote{text-align:center;color:var(--muted);font-size:14px;margin-top:22px}
+  .mcta{display:none}
+  @media (max-width:980px){.mcta{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:70;justify-content:center;align-items:center;gap:10px;padding:18px 20px;border-radius:999px;font:600 17px "Outfit",sans-serif;color:#fff;background:linear-gradient(135deg,#2D6BE4,#5B8CFF);box-shadow:0 14px 40px rgba(45,107,228,.55),inset 0 1px 0 rgba(255,255,255,.25);transition:transform .35s ease,opacity .35s ease}.mcta svg{width:14px;height:14px}.mcta.hide{transform:translateY(150%);opacity:0;pointer-events:none}.wa-float{bottom:96px}}
+  @media (max-width:600px){
+    .hero2{padding:22px 0 30px;text-align:left}
+    .hero2 .wrap.h2grid{gap:26px}
+    .pill{font-size:10.5px;letter-spacing:.1em;padding:7px 12px}
+    .hero2 h1{font-size:33px;line-height:1.05;margin:16px 0 12px}
+    .hero2 p.lead{font-size:16px;line-height:1.5;margin:0}
+    .proof{justify-content:flex-start;margin-top:18px;gap:12px}
+    .avs img{width:38px;height:38px}
+    .proof p{font-size:14px;max-width:none}
+    .hnums{display:none}
+    header .nav{height:64px}
+  }
 </style>
 </head>
 <body>
@@ -696,6 +710,11 @@
   document.addEventListener('mouseover',function(e){document.body.classList.toggle('cur-hover',!!e.target.closest('a,button,select,input,summary,label'))});
   (function loop(){rx+=(x-rx)*.16;ry+=(y-ry)*.16;r.style.transform='translate('+rx+'px,'+ry+'px)';requestAnimationFrame(loop)})();
 })();
+</script>
+<a href="#analise" class="mcta" id="mcta">Quero meu diagnóstico gratuito <svg viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+<script>
+(function(){var b=document.getElementById('mcta'),c=document.getElementById('analise');if(!b||!c||!('IntersectionObserver' in window))return;
+new IntersectionObserver(function(e){b.classList.toggle('hide',e[0].isIntersecting)},{threshold:.15}).observe(c);})();
 </script>
 </body>
 </html>
