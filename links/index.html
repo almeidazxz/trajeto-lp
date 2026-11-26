@@ -8,7 +8,7 @@
 <meta name="robots" content="noindex,follow">
 <meta property="og:title" content="Trajeto Ads | A agenda previsível da sua clínica começa aqui">
 <meta property="og:image" content="../logo.png">
-<meta name="theme-color" content="#F5F7FB">
+<meta name="theme-color" content="#050D1C">
 <link rel="icon" href="../favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,17 +61,46 @@
   .reveal{opacity:0;transform:translateY(14px);animation:in .7s cubic-bezier(.2,.7,.2,1) forwards}
   @keyframes in{to{opacity:1;transform:none}}
   @media (prefers-reduced-motion:reduce){.bg i,.main::after,.reveal{animation:none;opacity:1;transform:none}}
+
+  /* ===== TEMA ESCURO ===== */
+  :root{--navy:#F3F6FB;--blue:#4C86FF;--blue-soft:rgba(76,134,255,.14);--bg:#050D1C;--line:rgba(255,255,255,.09);--muted:#9AA7BD}
+  body{background:#050D1C;color:#F3F6FB}
+  .bg{background:radial-gradient(70% 45% at 50% -8%,rgba(45,107,228,.36),transparent 70%),radial-gradient(50% 30% at 90% 100%,rgba(45,107,228,.12),transparent 70%),linear-gradient(180deg,#071226,#050D1C 60%)}
+  .bg::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:48px 48px;-webkit-mask-image:radial-gradient(90% 55% at 50% 0%,#000 30%,transparent 80%);mask-image:radial-gradient(90% 55% at 50% 0%,#000 30%,transparent 80%)}
+  .bg i{filter:blur(90px);opacity:1}
+  .bg i:nth-child(1){background:radial-gradient(circle,rgba(45,107,228,.42),rgba(45,107,228,.12) 45%,transparent 76%)}
+  .bg i:nth-child(2){background:radial-gradient(circle,rgba(91,140,255,.22),rgba(91,140,255,.06) 45%,transparent 78%)}
+  .wrap{padding-top:56px}
+  .logo{filter:brightness(0) invert(1);height:30px}
+  .pill{display:inline-flex;align-items:center;gap:9px;margin-top:22px;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#BFD3FF;background:linear-gradient(120deg,rgba(45,107,228,.18),rgba(45,107,228,.04));border:1px solid rgba(76,134,255,.35);border-radius:999px;padding:8px 14px}
+  .pulse{width:7px;height:7px;border-radius:50%;background:#4C86FF;animation:pulse 2.4s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(76,134,255,.55)}70%{box-shadow:0 0 0 9px rgba(76,134,255,0)}100%{box-shadow:0 0 0 0 rgba(76,134,255,0)}}
+  .svc{color:#8FB3FF}
+  h1{color:#fff}
+  h1 em{background-image:linear-gradient(90deg,#4C86FF,#9DBDFF)}
+  .main .go{color:#0C2340}
+  .svc{letter-spacing:.12em;font-size:11.5px}
+  .main{background:radial-gradient(420px 220px at 100% 0%,rgba(143,179,255,.35),transparent 60%),linear-gradient(135deg,#2D6BE4,#1A3F8F);box-shadow:0 20px 50px rgba(45,107,228,.4),inset 0 1px 0 rgba(255,255,255,.2)}
+  .main small{color:#DCE7FF}
+  .feat,.lnk{background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border-color:rgba(255,255,255,.09);box-shadow:none;backdrop-filter:blur(8px)}
+  .feat:hover,.lnk:hover{border-color:rgba(76,134,255,.45);box-shadow:0 0 0 1px rgba(76,134,255,.15),0 16px 40px rgba(0,0,0,.35)}
+  .feat .new{color:#BFD3FF;background:rgba(76,134,255,.15)}
+  .feat span.s{color:#8FB3FF}
+  .ic{background:rgba(76,134,255,.14);color:#8FB3FF}
+  .lnk .ar{color:#6F7C93}
+  .reveal{filter:blur(4px)}
+  @keyframes in{to{opacity:1;transform:none;filter:none}}
 </style>
 </head>
 <body>
 <div class="bg"><i></i><i></i></div>
 <main class="wrap">
   <div class="top reveal">
-    <div class="avatar"><img src="../diagnostico/eduardo2.webp" alt="Eduardo Almeida"></div>
     <img class="logo" src="../logo.png" alt="Trajeto Ads">
+    <span class="pill"><i class="pulse"></i>Exclusivo para médicos e clínicas</span>
     <p class="svc">Tráfego · Comercial · Acompanhamento</p>
     <h1>A agenda previsível da sua clínica <em>começa aqui.</em></h1>
-    <p class="tag">Do anúncio à avaliação agendada. Paciente certa chegando e equipe pronta para agendar.</p>
+    <p class="tag">Paciente certo chegando e equipe preparada para converter cada contato.</p>
   </div>
 
   <div class="list">
@@ -93,7 +122,7 @@
 
     <a class="lnk reveal" style="animation-delay:.26s" href="../diagnostico/?utm_source=instagram&utm_medium=bio&utm_campaign=links#entregas">
       <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg></span>
-      <span><b>Como funciona o método</b><small>As 4 etapas, do anúncio à avaliação</small></span><span class="ar">›</span>
+      <span><b>Como funciona o método</b><small>As 4 etapas do nosso método</small></span><span class="ar">›</span>
     </a>
 
     <a class="lnk reveal" style="animation-delay:.32s" href="https://trajeto-lp.vercel.app/?utm_source=instagram&utm_medium=bio&utm_campaign=links">
